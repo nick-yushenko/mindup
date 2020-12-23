@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <title>MindUp</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap-fluid">
+      <div class="logo">
+        <img src="img/logo.svg" alt="MindUp">
+        <span>MindUp</span>
+      </div>
+      <p class="definition">
+        Сервис по&nbsp;научно-обоснованной психотерапии и&nbsp;самотерапии
+      </p>
+    </div>
+  </header>
+  <div class="header-fixed">
+    <div class="wrap-fluid">
+      <div class="logo">
+        <img src="img/logo.svg" alt="MindUp">
+      </div>
+      <nav class="header-nav">
+        <a href="#problems" class=" anchor header-nav__item current">С чем поможем</a>
+        <a href="#howitworks" class=" anchor header-nav__item">Как это работает </a>
+        <a href="#price" class=" anchor header-nav__item">Цена </a>
+        <a href="#doctors" class=" anchor header-nav__item">Специалисты</a>
+        <a href="#codes" class=" anchor header-nav__item">Принцип работы</a>
+      </nav>
+      <div class="header-social">
+        <img src="img/brif/telegram-icon.svg" alt="Telegram">
+        <img src="img/brif/whatsapp-icon.svg" alt="WhatsApp">
+      </div>
+      <a href="#brif"  class="anchor header-btn btn">Подобрать бесплатно</a>
+    </div>
+  </div>
+  <main class="main">
+    <section class="section hero">
+      <div class="wrap">
+        <div class="descr">
+          <h1 class="section-title h1 left hero-title ">Ваш личный онлайн&nbsp;&mdash; психотерапевт</h1>
+          <span class="section-subtitle hero-subtitle">1500&ndash;5500&nbsp;₽ по&nbsp;видео и&nbsp;лично</span>
+          <span class="section-subtitle hero-subtitle">500&ndash;1000&nbsp;₽ через чат</span>
+          <div class="hero-btn">
+            <a href="#" class="btn">Подобрать бесплатно</a>
+            <p class="hero-btn__def">
+              6&nbsp;месяцев самоподдержки
+              в&nbsp;приложении <a href="#price" class="anchor">MindUp</a> в&nbsp;подарок
+            </p>
+          </div>
+        </div>
+        <div class="img">
+          <img src="img/hero/hero-img.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="section problem js-headerFixPoint" id="problems">
+      <div class="wrap">
+        <h2 class="section-title problem-title center">
+          С&nbsp;чем поможет психотерапевт
+        </h2>
+        <div class="problem-wrap">
+          <div class="problem-item">
+            <img src="img/problems/problem-1.svg" alt="" class="problem-item__img">
+            <span class="problem-item__title">Решить конфликты <br> в&nbsp;семье</span>
+          </div>
+          <div class="problem-item">
+            <img src="img/problems/problem-2.svg" alt="" class="problem-item__img">
+            <span class="problem-item__title">Справиться <br>
+              с&nbsp;трудностями на&nbsp;работе</span>
+          </div>
+          <div class="problem-item">
+            <img src="img/problems/problem-3.svg" alt="" class="problem-item__img">
+            <span class="problem-item__title">Разобраться с&nbsp;тревогой <br>
+              и&nbsp;депрессией</span>
+          </div>
+          <div class="problem-item">
+            <img src="img/problems/problem-4.svg" alt="" class="problem-item__img">
+            <span class="problem-item__title">Избавиться <br> от&nbsp;зависимостей</span>
+          </div>
+          <div class="problem-item">
+            <img src="img/problems/problem-5.svg" alt="" class="problem-item__img">
+            <span class="problem-item__title">Проработать <br> чувство вины</span>
+          </div>
+          <div class="problem-item">
+            <img src="img/problems/problem-6.svg" alt="" class="problem-item__img">
+            <span class="problem-item__title">Избавиться от&nbsp;прокрастинации <br>
+              и&nbsp;перфекционизма</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section brif" id="brif">
+      <!-- <img src="img/brif/brif-bg.svg" alt="" class="brif-bg"> -->
+      <div class="wrap">
+        <div class="descr">
+          <h2 class="section-title left brif-title">
+            Оставьте пожелания&nbsp;&mdash; мы&nbsp;подберём cпециалиста под вашу ситуацию
+          </h2>
+          <span class="section-subtitle brif-subtitle">
+            Если на&nbsp;первой встрече что-то пойдёт не&nbsp;так&nbsp;&mdash; подберём другого терапевта.
+          </span>
+          <div class="brif-social">
+            <img src="img/brif/telegram-icon.svg" alt="Telegram" class="telegram">
+            <img src="img/brif/whatsapp-icon.svg" alt="WhatsApp" class="whatsapp">
+          </div>
+        </div>
+        <form action="#" class="form" id="brifForm">
+          <div class="input-block">
+            <input type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="input-block">
+            <input type="tel" name="phone" placeholder="Телефон для связи">
+          </div>
+          <div class="input-block">
+            <textarea name="comment" id="" cols="30" rows="10">Коротко о&nbsp;вашей проблеме (необязательно)</textarea>
+          </div>
+          <input type="submit" class="submit btn" value="Подобрать бесплатно">
+          <div class="privacy">
+            <input type="checkbox" checked="checked" class="checkbox" name="privacy" id="privacy">
+            <label for="privacy">
+              Согласен на&nbsp;обработку персональных данных
+              в&nbsp;соответствии с&nbsp;<a href="#">политкой конфиденциальности</a>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section about">
+      <div class="wrap">
+        <div class="descr">
+          <h2 class="section-title left about-title">
+            У&nbsp;нас работают только профессиональные психологи и&nbsp;психотерапевты
+          </h2>
+          <ul class="ul">
+            <li class="li">
+              <img src="img/icons/li-icon.svg" alt="" class="icon">
+              <span class="b">
+                Имеют профильное образование
+              </span>
+              и&nbsp;сертификаты для проведения психотерапии
+            </li>
+            <li class="li">
+              <img src="img/icons/li-icon.svg" alt="" class="icon">
+              <span class="b">
+                Имеют опыт консультирования
+              </span>
+              Постоянно проходят повышения квалификации
+              и&nbsp;регулярную супервизию у&nbsp;коллег
+            </li>
+            <li class="li">
+              <img src="img/icons/li-icon.svg" alt="" class="icon">
+              <span class="b">
+                Соблюдают принцип конфиденциальности
+              </span>
+              Не&nbsp;разглашают информацию, которую узнали
+              во&nbsp;время консультации. Специалист никогда и&nbsp;никому не&nbsp;даст понять, что вы&nbsp;ходите
+              к&nbsp;нему на&nbsp;консультацию
+            </li>
+          </ul>
+          <a href="#" class="about-download">Скачать полный кодекс психотерапевта (PDF) </a>
+        </div>
+        <!-- <div class="img"> -->
+          <!-- <img src="img/about/about-img.svg" alt=""> -->
+        <!-- </div> -->
+      </div>
+    </section>
+    <section class="section howitworks" id="howitworks">
+      <!-- <img src="img/howitworks/howitworks-bg.svg" alt="" class="howitworks-bg"> -->
+      <div class="wrap">
+        <h2 class="section-title center howitworks-title">Как это работает</h2>
+        <div class="howitworks-wrap">
+          <div class="howitworks-img">
+            <img src="img/howitworks/howitworks-img.svg" alt="">
+          </div>
+          <div class="howitworks-descr">
+            <span class="howitworks-subtitle">
+              Подбираем специалиста под вашу ситуацию
+            </span>
+            <ul class="howitworks-ul">
+              <li class="howitworks-li">
+                Подробно разберемся в&nbsp;вашей проблеме
+              </li>
+              <li class="howitworks-li">
+                Учтём ваши пожелания и&nbsp;метод работы психотерапевта
+              </li>
+              <li class="howitworks-li">
+                Подскажем, куда обратиться, если наши специалисты не&nbsp;смогут помочь
+              </li>
+              <li class="howitworks-li">
+                Подберём специалиста на&nbsp;замену, если будет нужно
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="howitworks-wrap">
+          <div class="howitworks-descr">
+            <span class="howitworks-subtitle">
+              Вы&nbsp;связываетесь со&nbsp;специалистом
+              и&nbsp;работаете напрямую удобным вам
+              способом
+            </span>
+            <ul class="howitworks-ul">
+              <li class="howitworks-li">
+                Через чат в&nbsp;мессенджере
+              </li>
+              <li class="howitworks-li">
+                Через Скайп, Зум по&nbsp;видеосвязи
+              </li>
+              <li class="howitworks-li">
+                Встречаетесь лично
+              </li>
+            </ul>
+            <div class="howitworks-more">
+              <span>+</span>
+              <span>3&nbsp;месяца доступа в&nbsp;приложение
+                по&nbsp;самотерапии и&nbsp;самоподдержке MindUp</span>
+            </div>
+          </div>
+          <div class="howitworks-img left">
+            <img src="img/howitworks/howitworks-img-2.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section codes" id="codes">
+      <div class="wrap">
+        <h2 class="section-title center codes-title">
+          Принципы работы с&nbsp;вами
+        </h2>
+        <div class="codes-wrap">
+          <div class="codes-item">
+            <span class="codes-item__title">
+              Учитываем вашу ситуацию, подбираем специалиста под вас
+            </span>
+            <p class="codes-item__text">
+              Выбираем из&nbsp;всех специалистов сервиса только тех, у&nbsp;кого есть опыт помощи людям с&nbsp;похожим
+              состоянием
+            </p>
+          </div>
+          <div class="codes-item">
+            <span class="codes-item__title">
+              Поддерживаем наших клиентов на&nbsp;всех этапах терапии
+            </span>
+            <p class="codes-item__text">
+              В&nbsp;подарок&nbsp;&mdash; бесплатный полный доступ к&nbsp;приложению для самостоятельной работы. Если
+              вам интересно, будем отправлять информацию для эффективной самотерапии
+            </p>
+          </div>
+          <div class="codes-item">
+            <span class="codes-item__title">
+              Только специалисты с&nbsp;научно&mdash;обоснованным подходом
+            </span>
+            <p class="codes-item__text">
+              Мы&nbsp;сотрудничаем со&nbsp;специалистами по&nbsp;когнитивно&mdash;поведенческой терапиии и&nbsp;другими
+              признанными наукой
+              подходами
+            </p>
+          </div>
+          <div class="codes-item">
+            <span class="codes-item__title">
+              Специалисты по&nbsp;подбору &mdash;
+              тоже психологи или врачи
+            </span>
+            <p class="codes-item__text">
+              Можем распознать состояние и&nbsp;точно подобрать научно-обоснованный метод и&nbsp;подходящего
+              специалиста, который,
+              скорее всего, поможет в&nbsp;вашей ситуации
+            </p>
+          </div>
+          <div class="codes-item">
+            <span class="codes-item__title">
+              Чутко реагируем на&nbsp;обратную
+              связь о&nbsp;работе специалиста
+            </span>
+            <p class="codes-item__text">
+              Психотерапевт не&nbsp;будет навязывать вам дополнительные услуги. Если что-то пойдёт не&nbsp;так, подберём
+              специалиста на&nbsp;замену бесплатно
+            </p>
+          </div>
+          <div class="codes-item">
+            <span class="codes-item__title">
+              Мы&nbsp;на&nbsp;связи по&nbsp;любым техническим и&nbsp;организационным вопросам
+            </span>
+            <p class="codes-item__text">
+              Вы&nbsp;можете нам задать любой вопрос, сделаем всё возможное, чтобы помощь в&nbsp;вашей ситуации
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section doctors" id="doctors">
+      <div class="wrap">
+        <h2 class="section-title center doctors-title">
+          Наши специалисты
+        </h2>
+        <div class="doctors-wrap">
+          <div class="doctors-item">
+            <div class="doctors-item__img">
+              <img src="img/doctors/doctor-1.png" alt="" class="">
+            </div>
+            <span class="doctors-item__name">Алина</span>
+            <span class="doctors-item__descr">Работает со&nbsp;взрослыми <br>
+              в&nbsp;КПТ, ACT, CFT*</span>
+          </div>
+          <div class="doctors-item">
+            <div class="doctors-item__img">
+              <img src="img/doctors/doctor-2.png" alt="" class="">
+            </div>
+            <span class="doctors-item__name">Дмитрий</span>
+            <span class="doctors-item__descr">Работает со&nbsp;взрослыми и&nbsp;детьми <br>
+              в&nbsp;КПТ, схематерапии*</span>
+          </div>
+          <div class="doctors-item">
+            <div class="doctors-item__img">
+              <img src="img/doctors/doctor-3.png" alt="" class="">
+            </div>
+            <span class="doctors-item__name">Сергей</span>
+            <span class="doctors-item__descr">Работает с&nbsp;парами <br>
+              в&nbsp;семейной терапии</span>
+          </div>
+        </div>
+        <div class="doctors-more">
+          <div class="doctors-more__wrap">
+            <img src="img/doctors/doctor-more_1.png" alt="Психотерапевт">
+            <img src="img/doctors/doctor-more_2.png" alt="Психотерапевт">
+            <img src="img/doctors/doctor-more_3.png" alt="Психотерапевт">
+            <img src="img/doctors/doctor-more_4.png" alt="Психотерапевт">
+            <img src="img/doctors/doctor-more_5.png" alt="Психотерапевт">
+            <img src="img/doctors/doctor-more_6.png" alt="Психотерапевт">
+          </div>
+          <span class="text">
+            ... и&nbsp;ещё 20+&nbsp;дипломированных психологов и&nbsp;психотерапевтов
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="section price" id="price">
+      <div class="wrap">
+        <h2 class="section-title center price-title">
+          Цены и&nbsp;условия
+        </h2>
+        <div class="price-wrap">
+          <div class="price-item">
+            <span class="price-item__name">Поддержка в&nbsp;чате</span>
+            <span class="price-item__count">от&nbsp;1000&nbsp;₽ в&nbsp;день</span>
+            <p class="price-item__descr">
+              Специалист будет отвечать в&nbsp;течение оговоренного времени на&nbsp;любые ваши вопросы в&nbsp;чате,
+              вы&nbsp;сможете отправлять ссобщения текстом или голосом.
+            </p>
+            <p class="price-item__descr">
+              Ожидание ответа не&nbsp;более 5&nbsp;минут
+            </p>
+          </div>
+          <div class="price-item">
+            <span class="price-item__name">Встреча по&nbsp;видеосвязи</span>
+            <span class="price-item__count">от&nbsp;1000&nbsp;₽&nbsp;/ сеанс</span>
+            <p class="price-item__descr">
+              Для работы необходим компьютер с&nbsp;веб-камерой или мобильный телефон, с&nbsp;Зумом или Скайпом.
+            </p>
+            <p class="price-item__descr">
+              Мы&nbsp;поможем вам решить технические вопросы, если это будет необходимо
+            </p>
+          </div>
+          <div class="price-item">
+            <span class="price-item__name">Личная встреча</span>
+            <span class="price-item__count">от&nbsp;2000&nbsp;₽&nbsp;/ сеанс</span>
+            <p class="price-item__descr">
+              Специалист принимает в&nbsp;оборудованном комфортном кабинете для консультаций
+            </p>
+          </div>
+          <div class="price-item">
+            <div class="logo">
+              <img src="img/price/logo-download.svg" alt="">
+              <span>MindUp</span>
+            </div>
+            <p class="text">
+              Скачайте приложение <br> MindUp для <br> самостоятельной работы между консультациями
+            </p>
+            <span class="download-text">
+              3&nbsp;месяца в&nbsp;подарок <br>
+              для наших клиентов, а&nbsp;далее
+              1900&nbsp;₽/ год или 290&nbsp;₽/ месяц
+            </span>
+            <div class="download-links">
+              <a href="#" style="margin-top: 2px;"><img src="img/price/download-img-1.svg"
+                  alt="Скачать с Apple store"></a>
+              <a href="#"><img src="img/price/download-img-2.svg" alt="Скачать с Google play"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer">
+      <div class="wrap">
+        <nav class="footer-nav">
+          <a href="#" class="footer-nav__item">Политика конфиденциальности</a>
+          <a href="#" class="footer-nav__item">Правила работы</a>
+          <a href="#" class="footer-nav__item">Реквизиты компании</a>
+        </nav>
+        <div class="footer-info">
+          <span>Телефон экстренной помощи МЧС России: <nobr class="phone">+7 495 989-50-50 </nobr></span>
+          <span>
+            Сервис MindUp не&nbsp;является службой экстренной помощи, специалисты консультируют только в&nbsp;рабочее
+            время и
+            подбирают специалиста только для плановой психологической помощи
+          </span>
+        </div>
+        <form class="footer-form">
+          <input type="email" placeholder="Электронная почта">
+          <button type="submit">
+            <img src="img/footer/submit-icon.svg" alt="">
+          </button>
+          <span>Отправим чеклисты <br> для самотерапии. Без спама</span>
+        </form>
+      </div>
+    </section>
+    <section class="copyright">
+      <div class="wrap">
+        <span>
+          Посещая сайт www.mindup.ru, вы&nbsp;предоставляете согласие на&nbsp;обработку данных о&nbsp;посещении вами
+          сайта www.mindup.ru (данные cookies и&nbsp;иные пользовательские данные), сбор которых автоматически
+          осуществляется Обществом с&nbsp;ограниченной ответственностью &laquo;Раз два три&raquo; (ОГРН 0000046399824,
+          ИНН 0000958429, почтовый адрес: 000000, г. Москва, проспект Мира&nbsp;33, строение 34, Юридический адрес:
+          107453, г. Москва, Семёновская площадь, д8А, эт.56, ком.8) на&nbsp;условиях Политики конфиденциальности
+          (Приложение &#8470;&nbsp;1&nbsp;к Пользовательскому соглашению). Компания также может использовать указанные
+          данные для их&nbsp;последующей обработки системами Google Analytics, Яндекс.Метрика, MyTarget, Monkey,
+          Mindbox, RoiStat, AmoCRM и&nbsp;др., а&nbsp;также передавать&nbsp;/ привлекать к&nbsp;обработке данных третьих
+          лиц, перечень которых размещен по&nbsp;пользовательском соглашении. Обработка осуществляется
+          с&nbsp;целью функционирования сайта www.mindup.ru и&nbsp;с&nbsp;целью продвижения Проектов
+          и&nbsp;их&nbsp;Инициаторов.
+        </span>
+      </div>
+    </section>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
