@@ -30,14 +30,15 @@ $('#brifForm').validate({
 $('input[name="phone"').mask('0 (000) 000 00-00')
 
 
-let headerHeight = 70
+let headerHeight = 0
 
 if (window.innerWidth <= 1100)
-  headerHeight = 60
+  headerHeight = 0
 if (window.innerWidth <= 860)
   headerHeight = 90
-  if (window.innerWidth <= 660)
-  headerHeight = 80
+if (window.innerWidth <= 660)
+  headerHeight = 70
+
 
 const anchors = document.querySelectorAll('a.anchor')
 if (anchors)
@@ -45,12 +46,12 @@ if (anchors)
     item.addEventListener('click', function () {
       let blockID = item.getAttribute('href').substring(1)
 
-      $("html, body").animate({
-        scrollTop: $('#' + blockID).offset().top - headerHeight/2 + "px"
-      }, {
-        duration: 500,
-        easing: "swing"
-      });
+        $("html, body").animate({
+          scrollTop: $('#' + blockID).offset().top - headerHeight /2 + "px"
+        }, {
+          duration: 500,
+          easing: "swing"
+        });
     })
   })
 
