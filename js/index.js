@@ -30,7 +30,14 @@ $('#brifForm').validate({
 $('input[name="phone"').mask('0 (000) 000 00-00')
 
 
+let headerHeight = 70
 
+if (window.innerWidth <= 1100)
+  headerHeight = 60
+if (window.innerWidth <= 860)
+  headerHeight = 90
+  if (window.innerWidth <= 660)
+  headerHeight = 80
 
 const anchors = document.querySelectorAll('a.anchor')
 if (anchors)
@@ -39,7 +46,7 @@ if (anchors)
       let blockID = item.getAttribute('href').substring(1)
 
       $("html, body").animate({
-        scrollTop: $('#' + blockID).offset().top + "px"
+        scrollTop: $('#' + blockID).offset().top - headerHeight/2 + "px"
       }, {
         duration: 500,
         easing: "swing"
@@ -80,7 +87,7 @@ privacyCheckbox.addEventListener('click', function () {
   if (privacyCheckbox.getAttribute('checked') == 'checked') {
     privacyCheckbox.setAttribute('checked', 'unchecked')
     brifFromSubmit.classList.add('disactive')
-    
+
   } else {
     brifFromSubmit.classList.remove('disactive')
 
