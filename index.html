@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?v=1">
   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
   <title>MindUp</title>
 </head>
@@ -20,6 +20,10 @@
       <p class="definition">
         Сервис по&nbsp;научно-обоснованной психотерапии и&nbsp;самотерапии
       </p>
+
+      <a href="#brif" class="anchor header-mb-btn  btn">
+        Подобрать бесплатно
+      </a>
     </div>
   </header>
   <div class="header-fixed">
@@ -38,7 +42,7 @@
         <img src="img/brif/telegram-icon.svg" alt="Telegram">
         <img src="img/brif/whatsapp-icon.svg" alt="WhatsApp">
       </div>
-      <a href="#brif"  class="anchor header-btn btn">Подобрать бесплатно</a>
+      <a href="#brif" class="anchor header-btn btn">Подобрать бесплатно</a>
     </div>
   </div>
   <main class="main">
@@ -49,7 +53,7 @@
           <span class="section-subtitle hero-subtitle">1500&ndash;5500&nbsp;₽ по&nbsp;видео и&nbsp;лично</span>
           <span class="section-subtitle hero-subtitle">500&ndash;1000&nbsp;₽ через чат</span>
           <div class="hero-btn">
-            <a href="#" class="btn">Подобрать бесплатно</a>
+            <a href="#brif" class="anchor btn">Подобрать бесплатно</a>
             <p class="hero-btn__def">
               6&nbsp;месяцев самоподдержки
               в&nbsp;приложении <a href="#price" class="anchor">MindUp</a> в&nbsp;подарок
@@ -120,7 +124,8 @@
             <input type="tel" name="phone" placeholder="Телефон для связи">
           </div>
           <div class="input-block">
-            <textarea name="comment" id="" cols="30" rows="10">Коротко о&nbsp;вашей проблеме (необязательно)</textarea>
+            <textarea name="comment" id="" cols="30" rows="10"
+              placeholder="Коротко о&nbsp;вашей проблеме (необязательно)"></textarea>
           </div>
           <input type="submit" class="submit btn" value="Подобрать бесплатно">
           <div class="privacy">
@@ -168,7 +173,7 @@
           <a href="#" class="about-download">Скачать полный кодекс психотерапевта (PDF) </a>
         </div>
         <!-- <div class="img"> -->
-          <!-- <img src="img/about/about-img.svg" alt=""> -->
+        <!-- <img src="img/about/about-img.svg" alt=""> -->
         <!-- </div> -->
       </div>
     </section>
@@ -204,8 +209,7 @@
           <div class="howitworks-descr">
             <span class="howitworks-subtitle">
               Вы&nbsp;связываетесь со&nbsp;специалистом
-              и&nbsp;работаете напрямую удобным вам
-              способом
+              и&nbsp;работаете напрямую удобным вам&nbsp;способом
             </span>
             <ul class="howitworks-ul">
               <li class="howitworks-li">
@@ -301,32 +305,35 @@
         <h2 class="section-title center doctors-title">
           Наши специалисты
         </h2>
-        <div class="doctors-wrap">
-          <div class="doctors-item">
-            <div class="doctors-item__img">
-              <img src="img/doctors/doctor-1.png" alt="" class="">
+        <div class="doctors-wrap-scroll">
+          <div class="doctors-wrap">
+            <div class="doctors-item">
+              <div class="doctors-item__img">
+                <img src="img/doctors/doctor-1.png" alt="" class="">
+              </div>
+              <span class="doctors-item__name">Алина</span>
+              <span class="doctors-item__descr">Работает со&nbsp;взрослыми <span class="br"></span>
+                в&nbsp;КПТ, ACT, CFT*</span>
             </div>
-            <span class="doctors-item__name">Алина</span>
-            <span class="doctors-item__descr">Работает со&nbsp;взрослыми <br>
-              в&nbsp;КПТ, ACT, CFT*</span>
-          </div>
-          <div class="doctors-item">
-            <div class="doctors-item__img">
-              <img src="img/doctors/doctor-2.png" alt="" class="">
+            <div class="doctors-item">
+              <div class="doctors-item__img">
+                <img src="img/doctors/doctor-2.png" alt="" class="">
+              </div>
+              <span class="doctors-item__name">Дмитрий</span>
+              <span class="doctors-item__descr">Работает со&nbsp;взрослыми и&nbsp;детьми
+                в&nbsp;КПТ,&nbsp;схематерапии*</span>
             </div>
-            <span class="doctors-item__name">Дмитрий</span>
-            <span class="doctors-item__descr">Работает со&nbsp;взрослыми и&nbsp;детьми <br>
-              в&nbsp;КПТ, схематерапии*</span>
-          </div>
-          <div class="doctors-item">
-            <div class="doctors-item__img">
-              <img src="img/doctors/doctor-3.png" alt="" class="">
+            <div class="doctors-item">
+              <div class="doctors-item__img">
+                <img src="img/doctors/doctor-3.png" alt="" class="">
+              </div>
+              <span class="doctors-item__name">Сергей</span>
+              <span class="doctors-item__descr">Работает с&nbsp;парами
+                в&nbsp;семейной терапии</span>
             </div>
-            <span class="doctors-item__name">Сергей</span>
-            <span class="doctors-item__descr">Работает с&nbsp;парами <br>
-              в&nbsp;семейной терапии</span>
           </div>
         </div>
+
         <div class="doctors-more">
           <div class="doctors-more__wrap">
             <img src="img/doctors/doctor-more_1.png" alt="Психотерапевт">
@@ -382,12 +389,13 @@
               <span>MindUp</span>
             </div>
             <p class="text">
-              Скачайте приложение <br> MindUp для <br> самостоятельной работы между консультациями
+              Скачайте приложение <span class="br"></span> MindUp для <span class="br"></span> самостоятельной работы
+              между консультациями
             </p>
             <span class="download-text">
-              3&nbsp;месяца в&nbsp;подарок <br>
+              3&nbsp;месяца в&nbsp;подарок <span class="br"></span>
               для наших клиентов, а&nbsp;далее
-              1900&nbsp;₽/ год или 290&nbsp;₽/ месяц
+              1900&nbsp;₽/&nbsp;год или 290&nbsp;₽/&nbsp;месяц
             </span>
             <div class="download-links">
               <a href="#" style="margin-top: 2px;"><img src="img/price/download-img-1.svg"
@@ -445,7 +453,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/index.js?v=1"></script>
 </body>
 
 </html>
