@@ -46,12 +46,12 @@ if (anchors)
     item.addEventListener('click', function () {
       let blockID = item.getAttribute('href').substring(1)
 
-        $("html, body").animate({
-          scrollTop: $('#' + blockID).offset().top - headerHeight /2 + "px"
-        }, {
-          duration: 500,
-          easing: "swing"
-        });
+      $("html, body").animate({
+        scrollTop: $('#' + blockID).offset().top - headerHeight / 2 + "px"
+      }, {
+        duration: 500,
+        easing: "swing"
+      });
     })
   })
 
@@ -62,7 +62,7 @@ window.addEventListener('scroll', function () {
   // console.log(headerFixPoint.pageY)
   // if (getCoords)
   // console.log(getCoords(headerFixPoint))
-  if (window.pageYOffset >= point - 50)
+  if (window.pageYOffset >= point - 100)
     headerFixed.classList.add('active')
   else
     headerFixed.classList.remove('active')
@@ -93,5 +93,22 @@ privacyCheckbox.addEventListener('click', function () {
     brifFromSubmit.classList.remove('disactive')
 
     privacyCheckbox.setAttribute('checked', 'checked')
+  }
+})
+
+
+const flot = document.querySelector('.flot')
+const flotOpen = document.querySelector('.flot .open')
+const flotClose = document.querySelector('.flot .close')
+
+flotOpen.addEventListener('click', function () {
+  if (window.innerWidth <= 425) {
+    flot.classList.add('opened')
+  }
+})
+
+flotClose.addEventListener('click', function () {
+  if (window.innerWidth <= 425) {
+    flot.classList.remove('opened')
   }
 })
